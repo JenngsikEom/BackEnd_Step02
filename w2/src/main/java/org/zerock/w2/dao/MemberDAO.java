@@ -66,26 +66,3 @@ public class MemberDAO {
         return memberVO;
     }
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
