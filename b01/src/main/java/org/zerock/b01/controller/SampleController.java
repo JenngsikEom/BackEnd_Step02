@@ -75,3 +75,13 @@ public class SampleController {
         model.addAttribute("arr", new String[]{"AAA", "BBB", "CCC"});
     }
 }
+
+
+
+
+
+
+
+
+
+

@@ -4,7 +4,7 @@ import lombok.*;
 
 import javax.persistence.*;
 
-/* DB 논리적 설계 단계에서 물리적 설계로 전환되기 전에
+/* DB 논리적 설계단계에서 물리적 설계로 전환되기 전에
 물리적 Table로 생성되어야 할 논리적 묶음을 Entity라고 한다.
 
 그래서 종종 Entity와 Table을 동일한 개념으로 사용하곤 한다.
@@ -17,8 +17,12 @@ import javax.persistence.*;
 @AllArgsConstructor
 @NoArgsConstructor
 @ToString
-public class Board {
+public class Board extends BaseEntity{
 
+    /* @Id는 Pk(Primary Key)로 정의한다는 의미
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
+    는 MySql/MariaDB에서 auto_increment 속성 부여
+    * */
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long bno;
@@ -37,3 +41,17 @@ public class Board {
         this.content = content;
     }
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
